@@ -1,0 +1,1 @@
+deadloop;357.0;12;[{"id":1,"isstartcaller":false,"calls":[2,3]},{"id":2,"isstartcaller":true,"calls":[1,3]},{"id":3,"isstartcaller":false}]; init initialize invoke.2 request.1 invoke.1 request.2 invoke.2
