@@ -9,7 +9,7 @@ import javax.xml.bind.Unmarshaller;
 
 import nz.aucklanduni.archchecker.object.ClassDiagram;
 
-public class ClassDiagramParser {
+public class DiagramParser {
 	
 	public ClassDiagram process(String fileName) throws JAXBException, IOException{
 		File xmlFile = new File(fileName);

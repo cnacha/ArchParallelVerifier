@@ -11,7 +11,7 @@ import javax.xml.bind.JAXBException;
 
 import com.google.gson.Gson;
 
-import nz.aucklanduni.archchecker.core.ClassDiagramParser;
+import nz.aucklanduni.archchecker.core.DiagramParser;
 import nz.aucklanduni.archchecker.object.ClassDiagram;
 import nz.aucklanduni.archchecker.object.Dependency;
 import nz.aucklanduni.model.ComponentConfig;
@@ -20,7 +20,7 @@ public class ClassDiagramToJSONConverter {
 	private static String outputJSONFile = "output/system/models.txt";
 	private static void convert(String modelName, PrintWriter writer) {
 		
-		ClassDiagramParser parser = new ClassDiagramParser();
+		DiagramParser parser = new DiagramParser();
 		try {
 			String modelFile = "input/classdiagram/"+modelName+".ucls";
 			
