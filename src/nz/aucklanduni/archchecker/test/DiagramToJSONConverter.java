@@ -16,7 +16,7 @@ import nz.aucklanduni.archchecker.object.ClassDiagram;
 import nz.aucklanduni.archchecker.object.Dependency;
 import nz.aucklanduni.model.ComponentConfig;
 
-public class ClassDiagramToJSONConverter {
+public class DiagramToJSONConverter {
 	private static String outputJSONFile = "output/system/models.txt";
 	private static void convert(String modelName, PrintWriter writer) {
 		
