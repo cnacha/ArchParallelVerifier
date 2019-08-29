@@ -33,12 +33,12 @@ public class TestRunWithPoolOnLayered {
 		Gson gson = new GsonBuilder().create();
 		long startTime = new Date().getTime();
 		try {
-
+			String modelName = args[0];//"/erp-model";
 			//FileReader fileReader = new FileReader(new File("input/arch-"+N+"-"+connectNo+"-layered.txt"));
-			FileReader fileReader = new FileReader(new File("input/erp-model.txt"));
+			FileReader fileReader = new FileReader(new File("input/"+modelName+".txt"));
 			reader = new BufferedReader(fileReader);
 			//writer = new BufferedWriter(new FileWriter("result/result-arch-"+N+"-"+connectNo+"-layered.csv", true));
-			writer = new BufferedWriter(new FileWriter("result/erp-model.csv", true));
+			writer = new BufferedWriter(new FileWriter("result/"+modelName+".csv", true));
 		   
 			List<List<VerifierOnThreadedService>> verifierList = new ArrayList<List<VerifierOnThreadedService>>();
 			String line = "";
